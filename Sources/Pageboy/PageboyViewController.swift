@@ -308,10 +308,11 @@ public extension PageboyViewController {
         }
         
         // guard against any active interactive scrolling
-        guard pageViewController.scrollView?.isProbablyActiveInScroll == false &&
-            self.isPositionedOnPageIndex else {
-                return false
-        }
+        // REMOVING TO FIX LINE GRAPH ISSUE
+//        guard pageViewController.scrollView?.isProbablyActiveInScroll == false &&
+//            self.isPositionedOnPageIndex else {
+//                return false
+//        }
         
         // guard against any current transition operation
         guard self.isScrollingAnimated == false else {
